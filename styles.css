@@ -1,0 +1,82 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #a0c6eb;
+}
+
+nav {
+  background-color: #0068d8;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.Seccion {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.img-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.image-cont {
+  text-align: center;
+}
+
+.image-cont img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.like-btn, .Del-btn {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+.like-btn:hover, .Del-btn:hover {
+  background-color: #ff5a4c;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
